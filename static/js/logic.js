@@ -89,7 +89,7 @@ function createMap(earthquakes) {
   legend.onAdd = function (map) {
     let div = L.DomUtil.create('div', 'info legend'),
     depth = [-10,10,30,50,70,90];
-    colors = ["    #00FF00","#DFFF00","#FFA07A","#F08080","#FA8072","#FF0000"];
+    colors = ["#00FF00","#DFFF00","#FFA07A","#F08080","#FA8072","#FF0000"];
     for (var i = 0; i < depth.length; i++) {
       div.innerHTML += "<i style= 'background: " + colors[i] + "'></i> " + depth[i] + (depth[i + 1] ? "&ndash;" + depth[ i + 1] + "<br>" : "+");
       }
@@ -99,46 +99,3 @@ function createMap(earthquakes) {
   legend.addTo(myMap)
 }
 
-
-
-
-// var my_map = L.map("map", {
-//     center: 
-//     zoom: 
-// });
-
-// L.tileLayer('', {
-//     attribution: ''
-// }).addto(my_map)
-
-// var link = ''
-
-// d3.json(link).then(function(data)) {
-
-//     createFeatures(data.features);
-
-// });
-// function createFeatures(){
-//     function magnitudeColor(){
-//         if
-//         else if
-//         else if
-//         else if
-//         else if 
-//         else return
-//     }
-// }
-
-// var circle = L.circle(){
-//     color: 
-//     fillColor: 
-//     fillOpacity:
-//     radius: 
-// }).addTo(my_map);
-// L.geoJSON(data, {
-//     style: function (features) {
-//         return {color: feature.properties.color};
-//     }
-// }).bindPopup(function (layer) {
-//     return layer.feature.properties.description;
-// }).addTo(my_map);
